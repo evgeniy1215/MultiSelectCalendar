@@ -37,7 +37,7 @@ public fun <T : ItemSelectState> DayItem(
     modifier: Modifier = Modifier,
     showCurrentDay: Boolean = false,
     selectedColor: Color = MaterialTheme.colorScheme.background,
-    currentDayColor: Color = Color(0xFF07DA624),
+    currentDayColor: Color = Color(0xFF3B9191),
     onClick: (LocalDate) -> Unit = {},
 ) {
     val date = state.date
@@ -59,7 +59,7 @@ public fun <T : ItemSelectState> DayItem(
             null
         },
         colors = CardDefaults.cardColors(
-            containerColor = if (isSelected) Color(0xFF07DA624) else selectedColor,
+            containerColor = if (isSelected) Color(0xFF3B9191) else selectedColor,
         ),
         shape = CircleShape,
     ) {
